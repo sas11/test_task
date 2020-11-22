@@ -1,0 +1,10 @@
+#block{
+	background-color: #123;
+	width: 500px;
+	height: 500px;
+	color: green;
+}
+button{
+	width: 50px;
+	height: 100px;
+}
