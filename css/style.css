@@ -1,10 +1,108 @@
-#block{
-	background-color: #123;
-	width: 500px;
-	height: 500px;
-	color: green;
+@font-face{
+	font-family: MyFont;
+	src: url("../fonts/19849.ttf");
 }
-button{
-	width: 50px;
+
+body{
+	font-family: MyFont, Georgia,Times,serif;
+	background-color: #FFDEAD;
+	font-size: small;
+	margin: 0px;
+}
+
+header.top {
+	margin: 10px 10px 0px 10px;
+	height: 150px;
+	background-color:rgba(161, 156, 105,0.7);
+	text-align: center;
+	border-radius: 5px;
+}
+
+#decor_top{
 	height: 100px;
+	background-image: url(../images/coffee2.jpeg);
+	background-size: cover;
+	background-position: center;
+	margin: 10px 10px 0px 10px;
+	border-radius: 5px;
 }
+#decor_bot{
+	height: 100px;
+  background-image: url(../images/coffee.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0px 10px 10px 10px;
+  border-radius: 5px;
+}
+
+
+header img{
+	height: 100%;
+}
+
+#tableContainer{
+	display: table;
+	border-spacing: 10px;
+}
+
+@media (max-width: 500px) {
+	header.top{
+		height: 120px;
+	}
+	header img{
+		width: 290px;
+	}
+	#tableContainer{
+	
+	border-spacing: 5px;
+	}
+}
+
+#tableRow{
+	display: table-row;
+}
+
+#drinks{
+	display: table-cell;
+	background-color:rgba(161, 156, 105,0.7);
+	width: 30%;
+	padding: 15px;
+	vertical-align: top;
+	border-radius: 5px;
+}
+
+#main{
+	display: table-cell;
+	background-color:rgba(161, 156, 105,0.7);
+	width: 70%;
+	padding: 15px;
+	vertical-align: top;
+	border-radius: 5px;
+}
+
+li{
+	list-style-image: url(../images/cups.png);
+}
+
+footer{
+	background-color:rgba(161, 156, 105,0.7);
+	
+	text-align: center;
+	padding: 15px;
+	margin: 0px 10px 10px 10px;
+	border-radius: 5px;
+}
+
+button{
+	border: none;
+}
+
+#night_day_bytton{
+	background-color: #123;
+	position: fixed;
+	top: 220px;
+	left:-10px;
+}
+
+
+
